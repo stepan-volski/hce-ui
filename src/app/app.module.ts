@@ -10,9 +10,10 @@ import { MatTableModule } from '@angular/material/table';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './components/main-page/main-page/main-page.component';
+import { PrettifyColumnNamePipe } from './pipes/prettify-column-name.pipe';
 
 @NgModule({
-  declarations: [AppComponent, MainPageComponent],
+  declarations: [AppComponent, MainPageComponent, PrettifyColumnNamePipe],
   imports: [
     BrowserModule,
     HttpClientModule,

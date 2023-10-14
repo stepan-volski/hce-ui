@@ -5,14 +5,23 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Entry } from 'src/app/models/Entry';
 import { PeopleService } from 'src/app/services/people.service';
 
-
 @Component({
   selector: 'app-main-page',
   styleUrls: ['./main-page.component.scss'],
   templateUrl: './main-page.component.html',
 })
 export class MainPageComponent implements AfterViewInit {
-  displayedColumns: string[] = ['id', 'name_ru','name_transcript', 'nationality', 'date_of_birth', 'date_of_listing', 'current_location', 'cause_of_listing', 'additional_info'];
+  displayedColumns: string[] = [
+    'id',
+    'name_ru',
+    'name_transcript',
+    'nationality',
+    'date_of_birth',
+    'date_of_listing',
+    'current_location',
+    'cause_of_listing',
+    'additional_info',
+  ];
 
   dataSource: MatTableDataSource<Entry>;
 
